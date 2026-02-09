@@ -35,7 +35,7 @@ public class Bubble_Sort {
 
 		int[] n = { 3, 4, 5, 6, 7, 8, 9, 3, 2, 5, 1, 7 };
 		for (int i = 0; i < n.length; i++) {
-			for (int j = 0; j < n.length - 1; j++) {
+			for (int j = 0; j < n.length - 1-i; j++) {
 				if (n[j] > n[j + 1]) {
 					int temp = n[j];
 					n[j] = n[j + 1];
@@ -93,7 +93,7 @@ public class Bubble_Sort {
 		students.add(s10);
 
 		for (int i = 0; i < students.size(); i++) {
-			for (int j = 0; j < students.size() - 1; j++) {
+			for (int j = 0; j < students.size() - 1-i; j++) {
 				if (students.get(j).id > students.get(j + 1).id) {
 					Student temp = students.get(j);
 					students.set(j, students.get(j + 1));
@@ -109,7 +109,7 @@ public class Bubble_Sort {
 		}
 
 		for (int i = 0; i < students.size(); i++) {
-			for (int j = 0; j < students.size() - 1; j++) {
+			for (int j = 0; j < students.size() - 1-i; j++) {
 				if (students.get(j).name.compareTo(students.get(j + 1).name) > 0) {
 					Student temp = students.get(j);
 					students.set(j, students.get(j + 1));
@@ -142,7 +142,7 @@ public class Bubble_Sort {
 
 
 		for (int i = 0; i < e.size(); i++) {
-			for (int j = 0; j < e.size() - 1; j++) {
+			for (int j = 0; j < e.size() - 1-i; j++) {
 				if (comp(e.get(j).salary, e.get(j + 1).salary) == true) {
 					Employee temp = e.get(j);
 					e.set(j, e.get(j + 1));
